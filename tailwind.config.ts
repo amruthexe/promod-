@@ -9,8 +9,19 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        background: {
+          DEFAULT: "#050505",
+          rich: "#0A0A0A",
+        },
+        foreground: "#FFFFFF",
+        red: {
+          crimson: "#7A0000",
+          dark: "#A50000",
+          bright: "#FF2D2D",
+        },
+      },
+      backgroundImage: {
+        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
       },
     },
   },
