@@ -20,7 +20,7 @@ export default function Testimonials() {
       opacity: 1,
       filter: "blur(0px)",
       transition: {
-        x: { type: "spring", stiffness: 300, damping: 30 },
+        x: { type: "spring" as const, stiffness: 300, damping: 30 },
         opacity: { duration: 0.3 },
       },
     },
@@ -29,7 +29,7 @@ export default function Testimonials() {
       opacity: 0,
       filter: "blur(4px)",
       transition: {
-        x: { type: "spring", stiffness: 300, damping: 30 },
+        x: { type: "spring" as const, stiffness: 300, damping: 30 },
         opacity: { duration: 0.3 },
       },
     }),

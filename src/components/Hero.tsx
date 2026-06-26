@@ -3,6 +3,7 @@
 
 import { useState, useRef, useEffect } from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { ArrowRight, Volume2, VolumeX, Play } from "lucide-react";
 import { profile } from "@/data/portfolio";
 
@@ -163,20 +164,26 @@ export default function Hero() {
           {/* Trusted Creators Badge */}
           <motion.div variants={itemVariants} className="flex items-center gap-3.5 mb-8">
             <div className="flex -space-x-2.5">
-              <img
+              <Image
                 className="w-8 h-8 rounded-full border-2 border-[#050505] object-cover"
                 src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=80&auto=format&fit=crop&q=80"
                 alt="Creator Avatar"
+                width={32}
+                height={32}
               />
-              <img
+              <Image
                 className="w-8 h-8 rounded-full border-2 border-[#050505] object-cover"
                 src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&auto=format&fit=crop&q=80"
                 alt="Creator Avatar"
+                width={32}
+                height={32}
               />
-              <img
+              <Image
                 className="w-8 h-8 rounded-full border-2 border-[#050505] object-cover"
                 src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80&auto=format&fit=crop&q=80"
                 alt="Creator Avatar"
+                width={32}
+                height={32}
               />
             </div>
             <span className="text-[9px] uppercase font-mono tracking-widest text-white/40 font-bold">
